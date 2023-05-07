@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Intro section with dropdown navigation</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-dark d-none d-md-block d-lg-block d-xl-block d-xxl-block">
+    <div class="container-fluid">
+      <a class="navbar-brand text-black mx-3 brandName" href="#">snap</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDarkDropdown"
+        aria-controls="navbarNavDarkDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse d-md-block" id="navbarNavDarkDropdown">
+        <ul class="navbar-nav feature-part">
+          <li class="nav-item dropdown">
+            <button class="btn dropdown-toggle feature-btn" data-bs-toggle="dropdown" aria-expanded="false">
+              Feature
+            </button>
+            <ul class="dropdown-menu">
+              <li><img src="./images/icon-todo.svg"><a class="dropdown-item d-inline" href="#">Todo List</a></li>
+              <li><img src="./images/icon-calendar.svg"><a class="dropdown-item d-inline " href="#">Calendar</a></li>
+              <li><img src="./images/icon-reminders.svg"><a class=" dropdown-item d-inline" href="#">Reminder</a>
+              </li>
+              <li><img src="./images/icon-planning.svg"><a class=" dropdown-item d-inline" href="#">Planning</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+
+        <ul class="navbar-nav company-part">
+          <li class="nav-item dropdown">
+            <button class="btn  dropdown-toggle company-btn" data-bs-toggle="dropdown" aria-expanded="false">
+              Company
+            </button>
+            <ul class="dropdown-menu ">
+              <li><a class="dropdown-item d-inline" href="#">History</a></li>
+              <li><a class="dropdown-item d-inline " href="#">Our Team</a></li>
+              <li><a class=" dropdown-item d-inline" href="#">Blog</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a href="#" class="btn career-btn">Career</a>
+          </li>
+        </ul>
+
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a href="#" class="btn about-btn">About us</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="right-side">
+        <a href="#" class="btn" type="button">Login</a>
+        <a href="#" class="btn" type="button">Register</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- hamburger menu -->
+  <nav class="navbar bg-body-tertiary fixed-top d-md-none d-lg-none d-xl-none d-xxl-none">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">snap</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+        aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas-header d-flex justify-content-end">
+          <button type="button" class="btn-close " data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Features
+              </a>
+              <ul class="dropdown-menu">
+                <li><img src="./images/icon-todo.svg"><a class="dropdown-item d-inline" href="#">Todo List</a></li>
+                <li><img src="./images/icon-calendar.svg"><a class="dropdown-item d-inline" href="#">Calandar</a></li>
+                <li><img src="./images/icon-reminders.svg"><a class="dropdown-item d-inline" href="#">Remainders</a>
+                </li>
+                <li><img src="./images/icon-planning.svg"><a class="dropdown-item d-inline" href="#">Planning</a></li>
+              </ul>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Company
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">History</a></li>
+                <li><a class="dropdown-item" href="#">Our Team</a></li>
+                <li><a class="dropdown-item" href="#">Blog</a></li>
+              </ul>
+            </li>
+
+            <li class="nav-item ">
+              <a class="btn" aria-current="page" href="#">Login</a>
+            </li>
+            <li class="nav-item">
+              <a class="btn" aria-current="page" href="#">Register</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <div class="body-content">
+    <div class="body-wrapper">
+
+      <div class="left-side-content">
+        <div class="upper-section">
+          <h1>Make</h1>
+          <h1 class="second-line">remote work</h1>
+        </div>
+
+        <div class="middle-section">
+          <p>Get your team in sync,no matter your location.
+            Streamline processes,create team rituals,and
+            watch productivity soar.
+          </p>
+        </div>
+
+        <div class="lower-section">
+          <a href="#">Learn More</a>
+        </div>
+
+        <div class="footer-section">
+          <img src="./images/client-databiz.svg">
+          <img src="./images/client-audiophile.svg">
+          <img src="./images/client-meet.svg">
+          <img src="./images/client-maker.svg">
+        </div>
+      </div>
+
+
+      <div class="right-side-content">
+        <div class="content-img">
+          <img src="./images/image-hero-desktop.png" class="desktopImg">
+          <img src="./images/image-hero-mobile.png" class="mobileImg">
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--   
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div> -->
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous"></script>
+
+</html>
